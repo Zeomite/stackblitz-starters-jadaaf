@@ -37,7 +37,7 @@ app.get('/stocks/filter/industry', (req, res) => {
 });
 
 app.get('/stocks', (req, res) => {
-  res.json( stocks );
+  res.json({ stocks });
 });
 
 app.listen(port, () => {
