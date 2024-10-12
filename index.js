@@ -25,7 +25,7 @@ app.get('/stocks/filter/exchange', (req, res) => {
   const filteredStocks = stocks.filter(
     (stock) => stock.exchange.toLowerCase() === exchange
   );
-  res.json({ filteredStocks });
+  res.json( filteredStocks );
 });
 
 app.get('/stocks/filter/industry', (req, res) => {
@@ -33,11 +33,11 @@ app.get('/stocks/filter/industry', (req, res) => {
   const filteredStocks = stocks.filter(
     (stock) => stock.industry.toLowerCase() === industry
   );
-  res.json({ filteredStocks });
+  res.json( filteredStocks );
 });
 
 app.get('/stocks', (req, res) => {
-  res.json({ stocks });
+  res.json( stocks );
 });
 
 app.listen(port, () => {
