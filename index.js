@@ -7,7 +7,7 @@ const port = 3000;
 
 app.use(cors());
 
-let stocks = require('./products.js');
+let stocks = require('./stocks.js');
 stocks = stocks.stocks;
 
 app.get('/stocks/sort/pricing', (req, res) => {
